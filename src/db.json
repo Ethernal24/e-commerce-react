@@ -1,0 +1,139 @@
+{
+  "internetProvider": [
+    {
+      "id": "1",
+      "name": "Telkomsel",
+      "image": "src/image/telkomsel.png",
+      "packages": [
+        {
+          "packageId": 101,
+          "name": "Pulsa 15000",
+          "price": 16500
+        },
+        {
+          "packageId": 102,
+          "name": "Pulsa 30000",
+          "price": 31500
+        },
+        {
+          "packageId": 103,
+          "name": "Pulsa 50000",
+          "price": 51500
+        },
+        {
+          "packageId": 104,
+          "name": "Pulsa 100000",
+          "price": 115000
+        },
+        {
+          "packageId": 105,
+          "name": "Pulsa 200000",
+          "price": 215000
+        },
+        {
+          "packageId": 106,
+          "name": "Pulsa 300000",
+          "price": 315000
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Three",
+      "image": "src/image/three.png",
+      "packages": [
+        {
+          "packageId": 201,
+          "name": "Pulsa 15000",
+          "price": 16500
+        },
+        {
+          "packageId": 202,
+          "name": "Pulsa 30000",
+          "price": 31500
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Indosat",
+      "image": "src/image/indosat.png",
+      "packages": [
+        {
+          "packageId": 301,
+          "name": "Pulsa 15000",
+          "price": 16500
+        },
+        {
+          "packageId": 302,
+          "name": "Pulsa 30000",
+          "price": 31500
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "XL",
+      "image": "src/image/xl.png",
+      "packages": [
+        {
+          "packageId": 301,
+          "name": "Pulsa 15000",
+          "price": 16500
+        },
+        {
+          "packageId": 302,
+          "name": "Pulsa 30000",
+          "price": 31500
+        }
+      ]
+    }
+  ],
+  "transactions": [
+    {
+      "id": "af1b",
+      "providerNumber": "666666",
+      "providerName": "Three",
+      "selectedPackage": 201,
+      "selectedPaymentMethod": "QRIS",
+      "totalPrice": 16500,
+      "date": "2024-09-19T20:59:13.106Z"
+    },
+    {
+      "id": "b89b",
+      "providerNumber": "666666",
+      "providerName": "Three",
+      "selectedPackage": 201,
+      "selectedPaymentMethod": "QRIS",
+      "totalPrice": 16500,
+      "date": "2024-09-19T20:59:13.109Z"
+    },
+    {
+      "id": "4a43",
+      "providerNumber": "9999",
+      "providerName": "Indosat",
+      "selectedPackage": 302,
+      "selectedPaymentMethod": "DANA",
+      "totalPrice": 31500,
+      "date": "2024-09-19T20:59:54.819Z"
+    },
+    {
+      "id": "c371",
+      "providerNumber": "9999",
+      "providerName": "Indosat",
+      "selectedPackage": 302,
+      "selectedPaymentMethod": "DANA",
+      "totalPrice": 31500,
+      "date": "2024-09-19T20:59:54.819Z"
+    }
+  ],
+  "profile": {
+    "name": "Giovanni",
+    "email": "gilbert@example.com",
+    "phone": "08123456789",
+    "address": "Jl. Merpati No. 123, Jakarta"
+  },
+  "pembayaran": {
+    "image": "src/image/qris.png"
+  }
+}

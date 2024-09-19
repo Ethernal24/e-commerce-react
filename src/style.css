@@ -1,0 +1,340 @@
+html {
+    margin: 0px;
+}
+
+body {
+    margin: 0px;
+}
+
+@media (max-width: 600px) {
+    Footer {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    a {
+        font-size: 12px;
+    }
+}
+
+.login-page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+}
+
+.login-form {
+    width: 350px;
+    padding: 35px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 10px 15px 15px 0px rgba(0, 0, 0, 0.2);
+
+}
+
+.sidebar {
+    height: "100vh";
+    border-radius: "5px";
+    overflow: "hidden";
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+}
+
+.carousel-wrapper {
+    border-radius: 10px;
+    max-width: 100%;
+    /* Memastikan carousel tidak lebih lebar dari kontainer */
+    margin: 0 auto;
+    /* Centering */
+    overflow: hidden;
+    /* Menyembunyikan bagian slide yang keluar */
+}
+
+.carousel-slide {
+    display: flex;
+    /* Menggunakan flexbox untuk center content */
+    align-items: center;
+    /* Centering vertical */
+    justify-content: center;
+    /* Centering horizontal */
+    height: 450px;
+    /* Anda bisa menyesuaikan tinggi slide */
+    background: #f0f0f0;
+    /* Warna latar belakang untuk setiap slide */
+    font-size: 1.5rem;
+    /* Ukuran font responsif */
+}
+
+.carousel-content {
+    text-align: center;
+    /* Centering text */
+    padding: 20px;
+    /* Memberikan padding pada teks */
+    width: 100%;
+    /* Memastikan konten memanfaatkan lebar slide */
+    box-sizing: border-box;
+    /* Menghindari overflow */
+}
+
+/* Media Queries untuk responsivitas tambahan */
+@media (max-width: 768px) {
+    .carousel-slide {
+        height: 200px;
+        /* Mengurangi tinggi untuk perangkat kecil */
+        font-size: 1.2rem;
+        /* Mengurangi ukuran font untuk perangkat kecil */
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-slide {
+        height: 150px;
+        /* Mengurangi tinggi untuk perangkat sangat kecil */
+        font-size: 1rem;
+        /* Mengurangi ukuran font untuk perangkat sangat kecil */
+    }
+}
+
+/* Atur tata letak untuk menempatkan konten di tengah dengan max-width */
+.centered-layout {
+    max-width: 1200px;
+    /* Atur lebar maksimum */
+    margin: 0 auto;
+    /* Tempatkan konten di tengah secara horizontal */
+    padding: 0 16px;
+    /* Tambahkan padding untuk layar kecil agar konten tidak menempel ke tepi */
+    width: 100%;
+    /* Pastikan konten mengambil lebar penuh pada layar kecil */
+    box-sizing: border-box;
+    /* Pastikan padding tidak melebihi max-width */
+}
+
+.dashboard-header {
+    padding: 0 16px;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container within the header for layout */
+.header-container {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+}
+
+/* Title styling */
+.header-title {
+    color: white;
+    font-size: 24px;
+    white-space: nowrap;
+    /* Prevents text from breaking */
+}
+
+/* Search bar */
+.search-bar {
+    width: 700px;
+    max-width: 100%;
+    transition: width 0.3s ease;
+}
+
+/* Button group styling */
+.button-group {
+    display: flex;
+    gap: 16px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 1200px) {
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .search-bar {
+        width: 50%;
+        transition: width 0.3s ease
+            /* Full width on smaller screens */
+    }
+}
+
+@media (max-width: 800px) {
+    .header-title {
+        font-size: 20px;
+    }
+
+    .search-bar {
+        width: 50%;
+        transition: width 0.3s ease
+            /* Full width on smaller screens */
+            /* Full width on mobile */
+    }
+
+    .button-group {
+        width: 100%;
+        justify-content: flex-start;
+    }
+}
+
+/* Search dropdown tampil ketika icon di-klik */
+.dropdown-search {
+    position: absolute;
+    width: 150px;
+    top: 60px;
+    /* Sesuaikan dengan tinggi header */
+    background-color: white;
+    padding: 5px;
+    margin-top: 5px;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling untuk search bar dropdown */
+.search-bar-dropdown {
+    width: 100%;
+}
+
+/* Gaya umum untuk layout */
+.dashboard-content {
+    padding: 0 16px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+}
+
+/* Kontainer dengan lebar penuh di layar kecil */
+.content-container {
+    max-width: 1200px;
+    width: 100%;
+    display: block;
+    padding-top: 24px;
+    box-sizing: border-box;
+}
+
+/* Responsif untuk tablet (768px sampai 1024px) */
+@media (max-width: 1200px) {
+    .content-container {
+        max-width: 900px;
+        width: 700px;
+        /* Atur ulang lebar maksimal untuk tablet */
+    }
+}
+
+/* Responsif untuk smartphone (max-width 768px) */
+@media (max-width: 800px) {
+    .content-container {
+        max-width: 100%;
+        /* Lebar penuh untuk perangkat kecil */
+        padding: 16px;
+        /* Kurangi padding untuk perangkat kecil */
+    }
+}
+
+/* Responsif untuk smartphone yang lebih kecil (max-width 480px) */
+@media (max-width: 600px) {
+    .content-container {
+        padding: 12px;
+        /* Lebih sedikit padding untuk perangkat kecil */
+    }
+}
+
+
+/* Gaya umum untuk layout responsif */
+.database-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Gaya umum untuk setiap card */
+.internet-provider-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.internet-provider-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Hover effect untuk card */
+.internet-provider-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Responsif untuk tablet (max-width 1024px) */
+@media (max-width: 1024px) {
+    .internet-provider-card {
+        width: 45%;
+        /* Setiap card mengambil sekitar 45% dari lebar */
+    }
+}
+
+/* Responsif untuk ponsel (max-width 768px) */
+@media (max-width: 768px) {
+    .internet-provider-card {
+        width: 100%;
+        /* Setiap card mengambil 100% lebar */
+    }
+
+    .database-container {
+        gap: 10px;
+        /* Kurangi jarak antar card di layar kecil */
+    }
+}
+
+.transaction-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .transaction-container {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .my-card {
+        width: 90%;
+        max-width: none;
+        transition: width 0.3s ease;
+    }
+}
+
+/* .login-button {
+    display: flex;
+    align-items: center;
+    /* Center vertically */
+/* } */
+
+.login-text {
+    margin-left: 8px;
+    /* Spasi antara ikon dan teks */
+}
+
+/* Media Queries untuk tampilan mobile */
+@media (max-width: 768px) {
+
+    .login-text {
+        display: none;
+        /* Sembunyikan teks pada tampilan mobile */
+    }
+}
