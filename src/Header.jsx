@@ -8,7 +8,6 @@ import LoginButton from "./ButtonLogin";
 const { Header } = Layout;
 const { Search } = Input;
 
-// eslint-disable-next-line react/prop-types
 const DashboardHeader = () => {
   return (
     <>
